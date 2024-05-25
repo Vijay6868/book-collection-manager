@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Book_Details"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Books"
+        style="@style/label_heading"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/tv_bookDetails"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:layout_alignRight="@id/et_title"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ic_edit"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_done"
+        android:layout_alignRight="@id/et_title"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        style="@style/lb_etText"
+        android:text="Title"
+        android:layout_marginTop="120dp"/>
+
+    <EditText
+        style="@style/et_text_box"
+        android:background="@drawable/bg_outline_1"
+        android:id="@+id/et_title"
+        android:layout_below="@+id/tv_bookDetails"/>
+
+    <TextView
+        style="@style/lb_etText"
+        android:text="Title"
+        android:layout_marginTop="110dp"
+        android:background="@color/white"/>
+
+    <EditText
+        style="@style/et_text_box"
+        android:background="@drawable/bg_outline_1"
+        android:id="@+id/et_author"
+        android:layout_below="@+id/et_title"/>
+    <TextView
+        style="@style/lb_etText"
+        android:text="Author"
+        android:layout_marginTop="180dp"
+        android:background="@color/white"/>
+
+    <EditText
+        style="@style/et_text_box"
+        android:background="@drawable/bg_outline_1"
+        android:id="@+id/et_genre"
+        android:layout_below="@+id/et_author"/>
+    <TextView
+        style="@style/lb_etText"
+        android:text="Genre"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"/>
+
+    <EditText
+        style="@style/et_text_box"
+        android:background="@drawable/bg_outline_1"
+        android:id="@+id/et_datePublished"
+        android:layout_below="@+id/et_genre"/>
+    <TextView
+        style="@style/lb_etText"
+        android:text="Date published"
+        android:layout_marginTop="320dp"
+        android:background="@color/white"/>
+    <Button
+        style="@style/button_4_half"
+        android:text="Delete"
+        android:layout_below="@+id/et_datePublished"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="230dp"
+        android:id="@+id/bt_Delete"/>
+
+    <Button
+        style="@style/button_5_half"
+        android:text="Delete"
+        android:layout_below="@+id/et_datePublished"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/bt_Back"/>
+
+
+
+
+
+</RelativeLayout>
