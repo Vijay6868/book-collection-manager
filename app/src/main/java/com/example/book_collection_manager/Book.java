@@ -5,13 +5,13 @@ public class Book {
     private String title;
     private String author;
     private String genre;
-    private int publicationYear;
+    private String publicationYear;
 
     public Book() {
         // Default constructor required for calls to DataSnapshot.getValue(Book.class)
     }
 
-    public Book(String id, String title, String author, String genre, int publicationYear) {
+    public Book(String id, String title, String author, String genre, String publicationYear) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -51,11 +51,11 @@ public class Book {
         this.genre = genre;
     }
 
-    public int getPublicationYear() {
+    public String getPublicationYear() {
         return publicationYear;
     }
 
-    public void setPublicationYear(int publicationYear) {
+    public void setPublicationYear(String publicationYear) {
         this.publicationYear = publicationYear;
     }
 
