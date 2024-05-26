@@ -50,4 +50,5 @@ public class AddBook extends AppCompatActivity {
     private void addBook() {
         bookManager.addBook(title,author,genre,datePublished);
     }
+
 }
