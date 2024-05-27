@@ -32,7 +32,8 @@
         android:src="@drawable/ic_done"
         android:layout_alignRight="@id/et_title"
         android:layout_marginTop="20dp"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:id="@+id/ic_done"/>
 
     <TextView
         style="@style/lb_etText"
@@ -73,18 +74,20 @@
         android:layout_marginTop="250dp"
         android:background="@color/white"/>
 
-    <TextView
+    <EditText
         style="@style/et_text_box"
         android:background="@drawable/bg_outline_1"
         android:id="@+id/et_datePublished"
         android:layout_below="@+id/et_genre"
         android:drawableRight="@drawable/ic_calendar"
+        android:paddingTop="7dp"
         />
     <TextView
         style="@style/lb_etText"
         android:text="Date published"
         android:layout_marginTop="320dp"
-        android:background="@color/white"/>
+        android:background="@color/white"
+        android:textStyle=""/>
     <Button
         style="@style/button_4_half"
         android:text="Delete"

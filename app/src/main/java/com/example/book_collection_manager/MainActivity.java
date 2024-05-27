@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements SelectedListener 
     @Override
     public void onItemClicked(Book book) {
         Intent intent = new Intent(this, BookDetails.class);
-        //intent.putExtra("BOOK_ID", book.getId());
+        intent.putExtra("BOOK_ID", book.getId());
         intent.putExtra("BOOK_TITLE", book.getTitle());
         intent.putExtra("BOOK_AUTHOR", book.getAuthor());
         intent.putExtra("BOOK_YEAR", book.getPublicationYear());
