@@ -34,6 +34,14 @@
         android:layout_marginTop="20dp"
         android:visibility="invisible"
         android:id="@+id/ic_done"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_camera"
+        android:layout_alignRight="@id/et_title"
+        android:layout_marginTop="70dp"
+        android:visibility="visible"
+        android:id="@+id/ic_camera"/>
 
     <TextView
         style="@style/lb_etText"

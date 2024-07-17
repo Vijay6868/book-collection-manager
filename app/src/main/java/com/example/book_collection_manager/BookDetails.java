@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserManager;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.net.InetSocketAddress;
+
 public class BookDetails extends AppCompatActivity {
+
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
+    private static final int REQUEST_IMAGE_SELECT = 2;
     EditText et_title, et_author, et_genre,et_datePublished;
     TextView w_title, w_author, w_genre, w_datePublished;
     String id, title, author, genre, datePublished;
@@ -35,10 +41,20 @@ public class BookDetails extends AppCompatActivity {
         //validateInputs();
         handleIcEdit();
         handleIcDone();
+        handleIcCamera();
         //getInputData();
         handleFieldEditStatus(false);
         bookManager = new BookManager();
 
+    }
+
+    private void handleIcCamera() {
+        ImageView btSelectImage = findViewById(R.id.ic_camera);
+        btSelectImage.setOnClickListener(v -> {
+            Intent pickPhotoIntent = new Intent(Intent.ACTION_PICK,
+                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            startActivityForResult(pickPhotoIntent, REQUEST_IMAGE_SELECT);
+        });
     }
 
     private void handleIcDone() {

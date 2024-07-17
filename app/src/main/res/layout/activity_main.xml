@@ -21,6 +21,11 @@
         android:id="@+id/et_search"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/tv_myBooks"/>
+    <ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ib_search"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
