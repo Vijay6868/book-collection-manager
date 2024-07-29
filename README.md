@@ -7,4 +7,10 @@ Book Collection Manager is a mobile application designed to help users manage th
 - **Cataloging Books**: Add new books to your collection by manually entering details or by scanning the ISBN.
 - **Search and Filter**: Easily search and filter books in your collection by title, author, genre, or reading status.
 
+## Technologies used
+- **Firebase Real-time database**
+- **Java**
+- **Android Studio**
+  
+
 ![](b1.png)
