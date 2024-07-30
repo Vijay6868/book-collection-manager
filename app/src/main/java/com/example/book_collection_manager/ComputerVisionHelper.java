@@ -18,7 +18,7 @@ import okhttp3.Response;
 public class ComputerVisionHelper {
     private static final String TAG = "ComputerVisionHelper";
     private static final String ENDPOINT = "https://book-collection-manager-computer-vision-instance.cognitiveservices.azure.com/";
-    private static final String SUBSCRIPTION_KEY = "8775fb120abc4c20aaa45bc72098e756";
+    private static final String SUBSCRIPTION_KEY = "";
 
     public interface OcrCallback {
         void onOcrSuccess(String extractedText);
