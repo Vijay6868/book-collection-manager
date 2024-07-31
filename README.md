@@ -13,4 +13,4 @@ Book Collection Manager is a mobile application designed to help users manage th
 - **Android Studio**
   
 
-![](b1.png)
+![](book_app.png)
