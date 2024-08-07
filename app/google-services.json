@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:850944831564:android:1698b3743645a6241884e9",
+        "mobilesdk_app_id": "",
         "android_client_info": {
           "package_name": "com.example.book_collection_manager"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBLpWpJYzDykqO1IzufZt2eTQ8ZkXBZByA"
+          "current_key": ""
         }
       ],
       "services": {
